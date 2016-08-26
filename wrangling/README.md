@@ -20,7 +20,7 @@ This program will be autograded.  That means that it's important to not change f
 
 If you do not get this result from running the tests, you will not get a good grade.
 
-District Margins
+District Margins (15 points)
 ----------------------------
 
 In the US, our legislature is made up of representatives of individual
@@ -60,3 +60,9 @@ difference between the first place candidate and the second is 100.
     West Virginia,4,100.0
     Florida,27,100
 
+To complete this assignment you'll need to complete three functions:
+* district_margins
+* all_states
+* all_state_rows
+
+You should not need to modify the "main" function.
