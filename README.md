@@ -1,2 +1,2 @@
 # ds-hw
-Homework for CSCI 3622
+Homework for CSCI 3022
