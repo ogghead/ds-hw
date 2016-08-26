@@ -32,6 +32,14 @@ a good grade.  Be sure to also look at the test file carefully, as it
 will give you examples of how the functions you need to implement are
 supposed to work.
 
+As with all our homeworks, we will distribute the code via git.  You
+are strongly encouraged to clone the repository so that if there are
+changes in the assignment (e.g., to fix an error), you can quickly
+merge your modified code using git.  If you find an error, Pull
+requests are quite welcome!  Another advantage of cloning this
+repository is that you'll also be able to very quickly download
+subsequent homeworks by pulling from this upstream repository.
+
 District Margins (15 points)
 ----------------------------
 
