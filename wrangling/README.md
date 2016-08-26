@@ -36,27 +36,27 @@ they are (with the most competitive districts first).  If an election
 is uncontested, the margin should be "100", in that the percentage
 difference between the first place candidate and the second is 100.  
 
-  $ python districts.py
-  $ head district_totals.csv
-  STATE,DISTRICT,MARGIN
-  Arizona,2,0.07000000000000028
-  California,7,0.7999999999999972
-  Florida,2,1.1299999999999955
-  Minnesota,8,1.3999999999999986
-  Maryland,6,1.4500000000000028
-  California,16,1.4599999999999937
-  Washington,4,1.6200000000000045
-  Texas,23,2.1000000000000014
-  Iowa,1,2.280000000000001
-  $ tail district_totals.csv
-  Georgia,3,100.0
-  Georgia,14,100.0
-  Florida,25,100
-  Georgia,5,100.0
-  Florida,14,100
-  Georgia,11,100.0
-  Pennsylvania,18,100.0
-  West Virginia,5,100.0
-  West Virginia,4,100.0
-  Florida,27,100
+    $ python districts.py
+    $ head district_totals.csv
+    STATE,DISTRICT,MARGIN
+    Arizona,2,0.07000000000000028
+    California,7,0.7999999999999972
+    Florida,2,1.1299999999999955
+    Minnesota,8,1.3999999999999986
+    Maryland,6,1.4500000000000028
+    California,16,1.4599999999999937
+    Washington,4,1.6200000000000045
+    Texas,23,2.1000000000000014
+    Iowa,1,2.280000000000001
+    $ tail district_totals.csv
+    Georgia,3,100.0
+    Georgia,14,100.0
+    Florida,25,100
+    Georgia,5,100.0
+    Florida,14,100
+    Georgia,11,100.0
+    Pennsylvania,18,100.0
+    West Virginia,5,100.0
+    West Virginia,4,100.0
+    Florida,27,100
 
