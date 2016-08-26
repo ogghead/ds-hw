@@ -117,5 +117,5 @@ Submitting Your Code
 
 You'll need to submit your assignment (word_counts.py, districts.py,
 and writeup.txt) on
-[Moodle https://moodle.cs.colorado.edu/course/view.php?id=49] as an
+[Moodle](https://moodle.cs.colorado.edu/course/view.php?id=49) as an
 upload.
