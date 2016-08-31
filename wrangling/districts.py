@@ -39,7 +39,7 @@ def all_state_rows(lines, state):
 
 if __name__ == "__main__":
     # You shouldn't need to modify this part of the code
-    lines = list(DictReader(open("data/2014_election_results.csv")))
+    lines = list(DictReader(open("../data/2014_election_results.csv")))
     output = DictWriter(open("district_margins.csv", 'w'), fieldnames=kHEADER)
     output.writeheader()
 
