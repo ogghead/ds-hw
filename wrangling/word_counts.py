@@ -37,7 +37,7 @@ def accumulate_counts(words, total=Counter()):
 if __name__ == "__main__":
     # You should not need to modify this part of the code
     total = Counter()
-    for tt in text_from_zipfile("data/state_union.zip"):
+    for tt in text_from_zipfile("../data/state_union.zip"):
         total = accumulate_counts(words(tt), total)
 
     for ii, cc in total.most_common(100):

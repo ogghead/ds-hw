@@ -43,7 +43,7 @@ class TestDistrictMargins(unittest.TestCase):
 class TestWordCounts(unittest.TestCase):
     def test_zip(self):
         self.assertEqual(set(x.decode('utf-8') for x in
-                             text_from_zipfile("data/test.zip")),
+                             text_from_zipfile("../data/test.zip")),
                          set(["FOO\n", "BAR\n", "BAZ\n"]))
 
     def test_words(self):
