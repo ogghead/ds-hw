@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
     summary = {}
     for state in all_states(lines):
-        margins = district_margins([x for x in lines if x["STATE"]==state])
+        margins = district_margins(all_state_rows(lines, state))
 
         for ii in margins:
             summary[(state, ii)] = margins[ii]
