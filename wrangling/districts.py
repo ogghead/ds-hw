@@ -4,16 +4,18 @@ import heapq
 
 kHEADER = ["STATE", "DISTRICT", "MARGIN"]
 
-def district_margins(lines):
+def district_margins(state_lines):
     """
     Return a dictionary with keys as districts as keys and the difference in
     percentage between the winner and the second-place.
+
+    @lines The csv rows that correspond to the districts of a single state
     """
 
     # Complete this function
-    percentages = defaultdict(list)
+    percentages = {}
 
-    return dict((int(x["D"]), 25.0) for x in lines if x["D"] and x["D"] != "H")
+    return dict((int(x["D"]), 25.0) for x in state_lines if x["D"] and x["D"] != "H")
 
 def all_states(lines):
     """
@@ -33,8 +35,8 @@ def all_state_rows(lines, state):
     @lines Only return lines from this larger list
     """
 
-    # Complete this function
-    for ii in lines:
+    # Complete/correct this function
+    for ii in lines[:10]:
         yield ii
 
 if __name__ == "__main__":
