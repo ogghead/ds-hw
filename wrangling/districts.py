@@ -6,8 +6,8 @@ kHEADER = ["STATE", "DISTRICT", "MARGIN"]
 
 def district_margins(state_lines):
     """
-    Return a dictionary with keys as districts as keys and the difference in
-    percentage between the winner and the second-place.
+    Return a dictionary with districts as keys, and the difference in
+    percentage between the winner and the second-place as values.
 
     @lines The csv rows that correspond to the districts of a single state
     """
