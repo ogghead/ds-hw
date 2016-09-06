@@ -48,7 +48,7 @@ In the US, our legislature is made up of representatives of individual
 these districts are competitive, meaning that the winner of the
 election is not a "sure thing" based on the voters in the districts.
 However, for a variety of reasons, many of these districts are not
-very competitive.  We're going to look at the 2014 election and see
+very competitive.  We're going to look at the 2014 election for the 114th congress and see
 which districts are competitive.  This also gives us a chance to play
 around with some continuous data (well, sort of; we'll assume votes
 are continuous even though you can't have a fractional vote).
