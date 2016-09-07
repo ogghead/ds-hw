@@ -13,7 +13,8 @@ def district_margins(state_lines):
     """
 
     # Complete this function
-    return dict((int(x["D"]), 25.0) for x in state_lines if x["D"] and x["D"] != "H")
+    return dict((int(x["D"]), 25.0) for x in state_lines if x["D"] and
+                not (x["D"] == "H" or " - " in x["D"]))
 
 def all_states(lines):
     """
