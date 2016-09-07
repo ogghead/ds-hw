@@ -61,7 +61,8 @@ class TestAuto(unittest.TestCase):
             for fname in key:
                 for ii, rr in key[fname]:
                     check_against = globals()[fname](ii)
-                    print(ii, rr)
+                    print("Testing %s\n\tInput: %s\n\tExpected: %s\n\tGot: %s" %
+                          (fname, str(ii)[:60], str(rr)[:60], str(check_against)[:60]))
                     if isinstance(rr, dict):
                         for jj in rr:
                             self.assertTrue(jj in check_against,
