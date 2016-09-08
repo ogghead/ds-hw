@@ -13,8 +13,30 @@ def district_margins(state_lines):
     """
 
     # Complete this function
-    return dict((int(x["D"]), 25.0) for x in state_lines if x["D"] and
-                not (x["D"] == "H" or " - " in x["D"]))
+    percentages = defaultdict(list)
+    distWinner, distSecond = 0.0, 0.0
+    dist = -1
+    for x in state_lines:
+        if x["D"] and x["D"] != "H" and x['GENERAL %'] != '' and x['FEC ID#'] != 'n/a':
+            if int(x['D'][:2]) != dist:
+                dist = int(x['D'][:2])
+                #print(dist)
+                distWinner, distSecond = 0.0, 0.0
+
+            temp = x['GENERAL %'].replace(',', '.')
+            temp = temp.replace('%', '')
+            newtemp = float(temp)
+            #print(newtemp, distWinner, distSecond)
+            if x['GE WINNER INDICATOR'] == 'W':
+                distWinner = newtemp
+                #print('yay')
+            elif newtemp > distSecond:
+                distSecond = newtemp
+                #print('yay2')
+            if dist != -1 and distWinner != 0.0:
+                percentages[dist] = (distWinner-distSecond)
+
+    return percentages
 
 def all_states(lines):
     """
@@ -24,7 +46,7 @@ def all_states(lines):
     """
 
     # Complete this function
-    return set(["Alabama"])
+    return set(d['STATE'] for d in lines)
 
 def all_state_rows(lines, state):
     """
@@ -34,9 +56,9 @@ def all_state_rows(lines, state):
     @lines Only return lines from this larger list
     """
 
-    # Complete/correct this function
-    for ii in lines[:10]:
-        yield ii
+    for ii in lines:
+        if ii['STATE'] == state:
+            yield (ii)
 
 if __name__ == "__main__":
     # You shouldn't need to modify this part of the code
